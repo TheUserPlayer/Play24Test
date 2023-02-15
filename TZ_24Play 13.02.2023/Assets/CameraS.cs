@@ -4,13 +4,11 @@ using UnityEngine;
 
 public class CameraS : MonoBehaviour
 {
-  public Animator anim ;
-  private void Start() {
-    anim = GetComponent<Animator>();
-  }
-  public void SakeAnim()
-  {
-    Debug.Log("Cam");
-    anim.Play("cameraShak");
-  }
+   public Transform Car;
+    public Vector3 Off;
+   
+    void Update()
+    {
+        transform.position = new Vector3(Off.x,Off.y, Car.position.z + Off.z);
+    }
 }

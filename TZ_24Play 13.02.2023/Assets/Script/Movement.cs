@@ -11,7 +11,7 @@ public class Movement : MonoBehaviour
     //private float posX;
     //private float posY;
     private float _speed = 0;
-    private readonly float _speedTouch = 10f;
+    private readonly float _speedTouch = 6f;
     public GameObject Text;
     public GameObject ButtonPlay;
     //[SerializeField] private GameObject player;
